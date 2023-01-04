@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poker Hand</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script defer src="//code.jquery.com/jquery.min.js"></script>
     <script defer src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
+    <!-- All my custom styles of page -->
     <style>
         body,
         html 
@@ -34,9 +34,12 @@
     </style>
 </head>
 <body>
+    <!-- Div that will contain all main page contents -->
     <div class="col-6 mx-auto p-2">
+        <!-- Main page header text -->
         <h1 class="text-center text-white fw-bold mt-3">Poker Hand</h1>
 
+        <!-- Div that will contain all card images, all images have a number ID so it can be easily assigned a new image in JS  -->
         <div id="card-images" class="text-center mt-5">
             <img id="2" src="img/mariocard.jpg" alt="">
             <img id="4" src="img/mariocard.jpg" alt="">
@@ -50,6 +53,7 @@
             <img id="9" src="img/mariocard.jpg" alt="">
         </div>
 
+        <!-- Will contain button, that user will press to start dealing cards -->
         <div class="text-center mt-4">
             <button id="deal-btn" class="btn text-center" onclick="StartDealing()">
                 <h5 class="text-white">Deal Cards</h5>
